@@ -1,3 +1,5 @@
 FROM        node:19
 RUN         mkdir /app
 WORKDIR     /app
+COPY        server.js .
+COPY        node_modules/ /app/node_modules/
